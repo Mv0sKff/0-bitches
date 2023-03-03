@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+  "name": "+0 bitches",
+  "description": "Visualise how effective you gather bitches while browsing the web",
+  "version": "0.1",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "zero@bitches-tycoon.de",
+      "strict_min_version": "109.0"
+    }
+  },
+  "icons": {
+    "48": "media/icon0_48.png"
+  },
+  "action": {
+    "default_popup": "options.html",
+    "default_icon": {
+      "48": "media/icon0_48.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "all_frames": true,
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
+  "permissions": [
+    "storage"
+  ],
+  "web_accessible_resources": [{
+    "matches": ["<all_urls>"],
+    "resources": ["media/icon0_48.png"]
+  }]
+}
