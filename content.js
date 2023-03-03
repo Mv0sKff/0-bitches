@@ -1,5 +1,6 @@
 let styles = `
 .bitches {
+    all: revert;
     width: 10px;
     height: 10px;
     background-color: transparent;
@@ -7,6 +8,7 @@ let styles = `
     font-family: sans-serif;
     color: white;
     mix-blend-mode: difference;
+    word-wrap: normal;
 }
 
 @keyframes bitches-effect {
