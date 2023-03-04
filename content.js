@@ -9,6 +9,14 @@ let styles = `
     color: white;
     mix-blend-mode: difference;
     word-wrap: normal;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
 }
 
 @keyframes bitches-effect {
@@ -27,7 +35,7 @@ var styleSheet = document.createElement("style")
 styleSheet.innerText = styles
 document.head.appendChild(styleSheet)
 
-document.onclick = () => applyCursorRippleEffect(event);
+document.onclick = () => applyCursorRippleEffect(event)
 
 function applyCursorRippleEffect(e) {
     const paragraph = document.createElement("p");
@@ -37,7 +45,7 @@ function applyCursorRippleEffect(e) {
     document.body.appendChild(paragraph);
 
     paragraph.style.left = `${e.clientX}px`;
-    paragraph.style.top = `${e.clientY}px`;
+    paragraph.style.top = `${e.clientY-2}px`; //+2 to avoid text select on some websites
 
     paragraph.style.animation = "bitches-effect .4s  linear";
     paragraph.onanimationend = () => document.body.removeChild(paragraph);
