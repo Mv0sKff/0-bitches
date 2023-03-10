@@ -1,1 +1,36 @@
-manifest_chromium.json
+{
+  "manifest_version": 3,
+  "name": "+0 bitches",
+  "description": "Visualize how effective you gather bitches while browsing the web",
+  "version": "0.3",
+  "icons": {
+    "48": "media/icon0_48.png"
+  },
+  "action": {
+    "default_popup": "options.html",
+    "default_icon": {
+      "48": "media/icon0_48.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "all_frames": true
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "web_accessible_resources": [{
+    "matches": ["<all_urls>"],
+    "resources": ["media/icon0_48.png"]
+  }]
+}
