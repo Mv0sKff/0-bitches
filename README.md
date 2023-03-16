@@ -10,12 +10,14 @@ Visualize how effective you gather bitches while browsing the web
 Coming to Chrome Web Store soon
 </p>
 
+This extension creates a nice animation every time you click somewhere on a website, to remind you how many bitches you just gathered.
+
 ## Features
 
-- Be Always aware of how many bitches you have thanks to the extension icon
+- Be always aware of how many bitches you have thanks to the extension icon
 - Stunning animations
 - Optimized for performance
-- Blazingly fast, not written in rust
+- Blazingly fast, not written in Rust
 
 ## Screenshots
 
