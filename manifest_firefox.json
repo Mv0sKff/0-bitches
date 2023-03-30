@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "+0 bitches",
   "description": "Visualize how effective you gather bitches while browsing the web",
-  "version": "0.2",
+  "version": "0.4",
   "browser_specific_settings": {
     "gecko": {
       "id": "zero@bitches-tycoon.de",
